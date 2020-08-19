@@ -74,22 +74,22 @@ int _MotorB_ch = ${dropdown_channel_b};
 void _motor_A_forward(int _channel, int _speed) {
     digitalWrite(_IN1, LOW);
     digitalWrite(_IN2, HIGH);
-    ledcWrite(_channel, _speed);
+    ledcWrite(_channel, 50;
 }
 void _motor_B_forward(int _channel, int _speed) {
     digitalWrite(_IN3, LOW);
     digitalWrite(_IN4, HIGH);
-    ledcWrite(_channel, _speed);
+    ledcWrite(_channel, 50);
 }
 void _motor_A_backward(int _channel, int _speed) {
     digitalWrite(_IN1, HIGH);
     digitalWrite(_IN2, LOW);
-    ledcWrite(_channel, _speed);
+    ledcWrite(_channel, 50);
 }
 void _motor_B_backward(int _channel, int _speed) {
     digitalWrite(_IN3, HIGH);
     digitalWrite(_IN4, LOW);
-    ledcWrite(_channel, _speed);
+    ledcWrite(_channel, 50);
 }
 void _motor_A_stop(int _channel) {
     digitalWrite(_IN1, HIGH);
